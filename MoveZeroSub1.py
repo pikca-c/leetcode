@@ -7,3 +7,4 @@ def moveZeroes(self, nums):
                 nums.append(0)
         for i in range(count):
             nums.remove(0)
+        return nums
