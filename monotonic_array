@@ -1,0 +1,32 @@
+#Final solution:
+class Solution(object):
+    def isMonotonic(self, nums):
+        if nums[0] > nums[-1]:
+            for i in range(len(nums)-1):
+                if nums[i] >= nums [i+1]:
+                    continue
+                else: return False
+            return True
+        else:
+            for i in range(len(nums)-1):
+                if nums[i] <= nums [i+1]:
+                    continue
+                else: return False
+            return True
+
+#Initial idea:
+#
+      if nums[0] > nums[1]:
+            for i in range(len(nums)-1):
+                if nums[i] >= nums[i+1]:
+                    continue
+                else: return False
+            return True
+        elif nums[0] < nums[1]:
+            for i in range(len(nums)-1):
+                if nums[i] <= nums[i+1]:
+                    continue
+                else: return False
+            return True
+        elif nums[0]==nums[1]:
+            return True
